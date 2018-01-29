@@ -12,6 +12,7 @@ import {
   View
 } from 'react-native';
 import MainComponent from './components'
+// require('dotenv').config()
 
 export default class App extends Component<{}> {
   render() {

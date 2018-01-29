@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "841398408259",
+    "firebase_url": "https://logo-racer.firebaseio.com",
+    "project_id": "logo-racer",
+    "storage_bucket": "logo-racer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841398408259:android:23bc3068990926a5",
+        "android_client_info": {
+          "package_name": "com.ekantintest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841398408259-lsu8s70klss8hag6s1rq5d6c7r8i2l6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXfUzQ0ivzUtGuRYf2ZwFEEMhv9MZqt0A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

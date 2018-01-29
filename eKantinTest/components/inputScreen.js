@@ -1,6 +1,19 @@
 import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import { FormLabel, FormInput, Button } from 'react-native-elements'
+import * as firebase from 'firebase'
+import Config from 'react-native-config'
+
+const config = {
+  apiKey: Config.apiKey,
+  authDomain: "logo-racer.firebaseapp.com",
+  databaseURL: "https://logo-racer.firebaseio.com",
+  projectId: "logo-racer",
+  storageBucket: "logo-racer.appspot.com",
+  messagingSenderId: "841398408259"
+};
+
+firebase.initializeApp(config);
 
 export default class InputScreen extends Component {
   constructor(props) {
@@ -20,6 +33,7 @@ export default class InputScreen extends Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={styles.titleText}>{Config.apiKey}</Text>
         <FormLabel>Input Data</FormLabel>
         <FormInput placeholder = 'Your Input Data' onChangeText={(e) => this.onChangeMethod(e)} />
         <Button
@@ -30,4 +44,14 @@ export default class InputScreen extends Component {
       </View>
     )
   }
+  componentWillMount() {
+    console.log(`${Config.apiKey}`)
+  }
 }
+
+const styles = StyleSheet.create({
+  titleText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+});
