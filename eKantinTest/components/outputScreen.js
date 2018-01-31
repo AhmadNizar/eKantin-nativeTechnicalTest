@@ -8,7 +8,7 @@ export default class OutputScreen extends Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>OutputScreen Screen jos</Text>
+        <Text>OutputScreen Screen</Text>
       </View>
     )
   }
